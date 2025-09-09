@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-left">
+            <img src="logo.svg" alt="Logo" class="logo"/>
+            <div class="title">
+            <span class="college">COLLEGE OF ENGINEERING PERUMON PTA</span>
+            <span class="caption">Under the Cooperative Academy of Professional Education (CAPE)</span>
+            <span class="established">Established by <span class="highlight">Govt. of Kerala</span></span>
+        </div>
+    </div>
+    <div class="nav-right">
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="menu">
+            <li><a href="index.html" class="link">Home</a></li>
+            <li><a href="login.html" class="link">Login</a></li>
+        </ul>
+    </div>
+    </div>
+    <h2 class="heading">Signup</h2>
+    <section class="register-section">
+    
+    <form class="register-form">
+        <input type="text" placeholder="Enter Your Name" class="form-field">
+        <input type="email" placeholder="Enter Your Email" class="form-field">
+        <input type="tel" placeholder="Enter Your Number" class="form-field">
+
+        <div class="gender-group">
+            <label class="gender-option"><input type="radio" name="gender"> Male</label>
+            <label class="gender-option"><input type="radio" name="gender"> Female</label>
+        </div>
+
+        <input type="password" placeholder="Enter Your Password" class="form-field">
+        <input type="password" placeholder="Confirm Password" class="form-field">
+
+        <label class="terms">
+            <input type="checkbox"> I agree to the 
+            <a href="#" class="terms-link">Terms and Conditions</a>.
+        </label>
+
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</section>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-left">
+            <img src="logo.svg" alt="Logo" class="logo"/>
+            <div class="title">
+                <span class="college">COLLEGE OF ENGINEERING PERUMON PTA</span>
+                <span class="caption">Under the Cooperative Academy of Professional Education (CAPE)</span>
+                <span class="established">Established by <span class="highlight">Govt. of Kerala</span></span>
+            </div>
+        </div>
+        <div class="nav-right">
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="menu">
+                <li><a href="index.html" class="link">Home</a></li>
+                <li><a href="signup.html" class="link">Signup</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="heading">Login</h2>
+    <section class="register-section">
+        <form class="register-form">
+            <input type="email" placeholder="Enter Your Email" class="form-field">
+            <input type="password" placeholder="Enter Your Password" class="form-field">
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+    </section>
+        <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
