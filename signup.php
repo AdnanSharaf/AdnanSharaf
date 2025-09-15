@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root"; // update if needed
-$password = ""; // update with your MySQL password
+$password = "mysql@123"; // update with your MySQL password
 $dbname = "college_db";
 
 // Connect to DB
